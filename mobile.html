@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -6,39 +5,124 @@
   <meta charset="UTF-8">
   
   
-  <title>4EverSafe Photos | Tonya Ouckama</title>
-  
-  
-  
-  
+  <title>4Ever Safe Photos | Tonya Ouckama</title>
 <style>
 :root {
   --textOne: "Tonya Ouckama";
   --textTwo: "Memory Coach";
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
+body {
+  font-family: monospace;
 }
+
 section {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-section img {
+
+#firstPage img {
   border-radius: 100%;
   margin: 15px;
+}
+
+@keyframes box-wiggle-before {
+  0% {
+    top: 0%;
+    left: 0%;
+    width: 2px;
+    height: 0%;
+  }
+  15% {
+    top: 0%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+  }
+  30% {
+    top: 100%;
+    left: 0%;
+    width: 2px;
+    height: 0%;
+  }
+}
+@keyframes box-wiggle-after {
+  0% {
+    top: 0%;
+    left: 100%;
+    width: 2px;
+    height: 0%;
+  }
+  15% {
+    top: 0%;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+  }
+  30% {
+    top: 100%;
+    left: 100%;
+    width: 2px;
+    height: 0%;
+  }
+}
+#secondPage {
+  flex-direction: column;
+  min-height: -moz-min-content;
+  min-height: -webkit-min-content;
+  min-height: min-content;
+}
+#secondPage h1 {
+  font-size: 50px;
+  margin: 10px;
+}
+#secondPage p {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 35vw;
+  margin: 10px;
+  color: darkblue;
+  padding: 15px;
+  box-shadow: 0px 20px 50px 10px rgba(10, 201, 82, 0.3);
+  border-radius: 10px;
+  background: rgba(10, 201, 82, 0.1);
+  position: relative;
+}
+#secondPage p::before {
+  content: "";
+  position: absolute;
+  animation: box-wiggle-before;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: blue;
+}
+#secondPage p::after {
+  content: "";
+  position: absolute;
+  animation: box-wiggle-after;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: blue;
+}
+
+#thirdPage {
+  flex-direction: column;
+}
+#thirdPage h1 {
+  font-size: 50px;
+  text-shadow: 0 0 3px #61F0FF, 0 0 5px #0000FF;
+  margin: 0px;
+}
+#thirdPage p {
+  font-size: 20px;
+  width: 75%;
+  color: dark green;
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 10px;
+  border-radius: 30px;
 }
 
 .banner {
@@ -982,6 +1066,86 @@ section img {
   --text: var(--textOne);
 }
 
+.panel:nth-child(116) {
+  --left: -690px;
+  --delay: 1.65s;
+  --hue: 215;
+  --althue: -75;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(117) {
+  --left: -696px;
+  --delay: 1.66s;
+  --hue: 216;
+  --althue: -78;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(118) {
+  --left: -702px;
+  --delay: 1.67s;
+  --hue: 217;
+  --althue: -81;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(119) {
+  --left: -708px;
+  --delay: 1.68s;
+  --hue: 218;
+  --althue: -84;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(120) {
+  --left: -714px;
+  --delay: 1.69s;
+  --hue: 219;
+  --althue: -87;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(121) {
+  --left: -720px;
+  --delay: 1.7s;
+  --hue: 220;
+  --althue: -90;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(122) {
+  --left: -726px;
+  --delay: 1.71s;
+  --hue: 221;
+  --althue: -93;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(123) {
+  --left: -732px;
+  --delay: 1.72s;
+  --hue: 222;
+  --althue: -96;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(124) {
+  --left: -738px;
+  --delay: 1.73s;
+  --hue: 223;
+  --althue: -99;
+  --text: var(--textOne);
+}
+
+.panel:nth-child(125) {
+  --left: -744px;
+  --delay: 1.74s;
+  --hue: 224;
+  --althue: -102;
+  --text: var(--textOne);
+}
+
 @keyframes rotate {
   45% {
     --text: var(--textTwo);
@@ -1024,7 +1188,7 @@ p a:hover::before {
 </head>
 
 <body>
-  <section>
+  <section id='firstPage'>
   <img src='https://d1vg9wkrun3t3k.cloudfront.net/users/433dff00-ab8a-47d0-95f1-5071e747036d/forever_files/ce338075-b8ab-4f8b-b3ae-faa4deffc52c/w2048.jpg?format=jpg&crop=fit&width=256&height=256&quality=60' width='30%' height='40%'>
   <div id="sideContainer">
   <div class='banner'>
@@ -1139,11 +1303,42 @@ p a:hover::before {
   <div class="panel"></div>
   <div class="panel"></div>
   <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
+  <div class="panel"></div>
 </div>  
-    <p><a href='https://tidycal.com/4eversafephotos'>Schedule an Appointment</a> · <a href='https://www.facebook.com/4EVERSAFEPhotos'>Social Media</a> · <a href='review.html'>Hear what people are saying</a>
+    <p><a href='https://tidycal.com/4eversafephotos'>Schedule an Appointment</a> · <a href='https://www.facebook.com/4EVERSAFEPhotos'>Social Media</a> · <a href='review.html'>Hear what people are saying</a> · <a href="https://www.forever.com/ambassador/tonya-ouckama">Sign Up Today!</a></p>
   </div>
   
 </section>
+
+
+<section id="thirdPage" style="background-image:url('https://d1vg9wkrun3t3k.cloudfront.net/users/8d0474de-b2b7-4914-903c-04a64193e62c/forever_files/095c5e98-97bc-4eb0-a2a6-d75fff70201a/w2048.jpg?format=jpg&width=1200&height=625&quality=85'), url('https://d1vg9wkrun3t3k.cloudfront.net/users/8d0474de-b2b7-4914-903c-04a64193e62c/forever_files/a9bd71d8-d9a4-4aa7-b1c1-bc180f5e3bf0/w2048.jpg?format=jpg&width=2048&height=2048&quality=85');background-size:50% 75% ;background-position:left,right;
+  background-repeat: no-repeat;">
+  <h1>Can memories last <a href="https://www.forever.com/ambassador/tonya-ouckama" style="color: inherit;"><i>Forever</i></a>?</h1>
+  <p>"Life happens in the blink of an eye. From wedding days to rainy days, each moment is worth remembering. At FOREVER, we don't believe in temporary – we believe in permanence. Pay once for your Permanent Cloud Storage. Preserve for generations. We guarantee that the memories you store with FOREVER® Permanent Cloud Storage will be preserved, protected, and available for your lifetime plus 100 years, with a goal of keeping your content safe and available as you have determined for many generations beyond."</p>
+</section>
+
+
+<section id='secondPage'>
+  <div id="scroll-container">
+  <h1>What does a Memory Coach Offer?</h1>  
+  <div>
+    <p style="font-size:30px;text-align:right;">Protection<br><br><br><br>Perserving<br><br><br><br>Passing Along<br><br><br><br>Product</p>
+    <p style="font-size: 15px;text-align:left;">Many of the photo sharing platforms out there have an interesting condition in their terms of service. At <i>any</i> time, they can delete your photos. Yep, <i>any</i> time. Google Photos, Shutterfly, Facebook, and more. In fact, Google Photos will delete you pictures and memories if it learns you're dead. Not with Forever.<br><br>Forever can digitize your old photos, your VHS tapes, anything that is going out of date. They return your originals to you, along with a digitized version to help you keep up with the world. Not only that, but you don't have to fear damage from natural disasters ruining your only copy.<br><br>Forever makes it easy to pass along your digital copies, in fact, when you create an account, you get the storage for your lifetime, plus 100 years. That way your memories can be safe for generations onward.<br><br>Sometimes we want to display our memories, and that is easy with Forever! Forever has mugs, books, blankets, jigsaw puzzles, water bottles, and new products come out frequently. These make the perfect birthday or holiday gifts for family and friends.</p>
+  </div>
+  </div>
+</section>
+
+
+
 
 <style>
     /* style the elements with CSS */
@@ -1158,7 +1353,6 @@ p a:hover::before {
 </style>
 
 <script>
-    window.alert("The mobile version of the website is still under construction. Please visit the website on a non-mobile device.");
     /* you can pass in options here */
     PleaseRotateOptions = {
         subMessage: "",
