@@ -1180,6 +1180,39 @@ p a::before {
 p a:hover::before {
   width: 100%;
 }
+
+#calPage {
+  flex-direction: column;
+}
+
+#grid {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.boxthing {
+  border: 1px solid white;
+  margin: 15px;
+  padding: 0px 10px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  max-width: 60%;
+  box-shadow: 0px 20px 50px 10px rgba(10, 82, 201, 0.3);
+  border-radius: 10px;
+  background: rgba(10, 82, 201, 0.1);
+  color: pink;
+}
+
+.boxthing p, .boxthing a {
+  font-size: 20px;
+  color: darkgreen;
+  text-decoration-color: lightgreen;
+}
 </style>
 
   
@@ -1337,7 +1370,19 @@ p a:hover::before {
   </div>
 </section>
 
+<section id="calPage">
+  <h1 style="font-size: 50px;color:pink;">Events and Calender</h1>
+  <div id="grid">
+    <div class="boxthing"><p><a href="www.tinyurl.com/4everwherever" target="_blank">FOREVER WHEREVER</a></p>A FREE ZOOM training opportunity: Instruction at the top of each hour, plus time to work on your projects or come and get more help in our breakout rooms.</div>
+    <div class="boxthing"><p><a href="https://www.facebook.com/groups/2631501760491630" target="_blank">TUESDAYS ON FACEBOOK</a></p>Tep the App Tuesday reminder and FOREVER MOMENTS VIP CLIENT Group LIVE Training every Tuesday, including a monthly upload/delete challenge.  Prizes each month.</div>
+    <div class="boxthing"><p>FOREVER STORAGE 101</p>....is an overview of your FOREVER account.  Invite others to join you! </div>
+    <div class="boxthing"><p>SOS - SAVE, ORGANIZE, SHARE</p>....is offered to help you iontroduce your friends & family to the four P's - Protection, Preserving, Passing Along, & Product.</div>
+  </div>
+</section>
 
+<section style="background-image: url('calendar.jpg');background-repeat: no-repeat;background-position:center;background-size:cover;"></section>
+
+<br><br><br><br>
 
 
 <style>
