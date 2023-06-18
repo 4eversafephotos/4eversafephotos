@@ -1213,6 +1213,31 @@ p a:hover::before {
   color: darkgreen;
   text-decoration-color: lightgreen;
 }
+
+#typeContainer {
+  display: block;
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 50%;
+  /* Calculates 50% of the element's width, and moves it by that */
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 75vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+#typewriter {
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 50%;
+  /* Calculates 50% of the element's width, and moves it by that */
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
+}
 </style>
 
   
@@ -1352,6 +1377,11 @@ p a:hover::before {
   
 </section>
 
+<div id="typeContainer">
+    <p style="font-size: 25px; width: 70%; text-shadow: 10px 5px rgba(50, 50, 50, 0.3);" id="typewriter">
+    </p>
+</div>
+
 
 <section id="thirdPage" style="background-image:url('https://d1vg9wkrun3t3k.cloudfront.net/users/8d0474de-b2b7-4914-903c-04a64193e62c/forever_files/095c5e98-97bc-4eb0-a2a6-d75fff70201a/w2048.jpg?format=jpg&width=1200&height=625&quality=85'), url('https://d1vg9wkrun3t3k.cloudfront.net/users/8d0474de-b2b7-4914-903c-04a64193e62c/forever_files/a9bd71d8-d9a4-4aa7-b1c1-bc180f5e3bf0/w2048.jpg?format=jpg&width=2048&height=2048&quality=85');background-size:50% 75% ;background-position:left,right;
   background-repeat: no-repeat;">
@@ -1407,7 +1437,28 @@ p a:hover::before {
 <script src='https://cdn.jsdelivr.net/gh/arscan/pleaserotate.js@master/pleaserotate.min.js'></script>
   
   
-  
+      <script id="rendered-js" >
+var i = 0;
+        var txt = "Let's start effortlessly making your memmories manageable! Hello, my name is Tonya Ouckama, and I am passionate about helping others perserve your memories for generations to come. Whether you are a beginning or a master I am here to guide you on your memory perserving journey as I help you learn to save organize and share your special moments. Let's walk this exciting adventure together!";
+        var speed = 65;
+    
+        function typeWriter(id, t) {
+            if (i < t.length) {
+                document.getElementById(id).innerHTML += t.charAt(i);
+                i++;
+                window.setTimeout(function() {typeWriter(id, t)}, speed);
+            } else {
+              i = 0;
+              window.setTimeout(function() {
+                document.getElementById(id).innerHTML = "";
+                typeWriter(id, t);
+              }, 6000);
+            }
+        }       
+        
+        typeWriter("typewriter", txt);
+    </script>
+
   
 </body>
 
