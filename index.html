@@ -189,6 +189,27 @@ section {
   color: white;
   text-decoration-color: darkblue;
 }
+
+#sectionfour {
+  position: relative;
+}
+
+#sectionfour::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('/path/to/image.png');
+  opacity: .4;
+  content: "";
+  z-index: -1;
+  background-image: url('https://forever-cms.s3.amazonaws.com/header_costco_1_f35b218f14.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 </style>
 
   
@@ -219,8 +240,7 @@ section {
 
 <section style="background-image: url('cloudservice.jpg'); background-size: 90% 80%; background-repeat:no-repeat; background-position: center;"></section>
 
-<section style="background-image: url('https://forever-cms.s3.amazonaws.com/header_costco_1_f35b218f14.png');background-size: 90% ;background-position:center;
-  background-repeat: no-repeat;">
+<section  id="sectionfour">
   <div class="hidden" id='containerThree'>
       <div id='title'>
         <h2 style="font-size:47px;color:orange;background-color:white;">A Memory Coach and the 4 Ps</h2>
