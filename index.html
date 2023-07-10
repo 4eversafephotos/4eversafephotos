@@ -198,6 +198,7 @@ section {
   min-height: 100vh;
 }
 
+
 #sectionfour::before {
   position: absolute;
   top: 0;
@@ -212,6 +213,31 @@ section {
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
+  
+}
+
+#containerClub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --direction: -50vw;
+  width: 75vw;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 80vw;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0% 5%;
+  
+}
+
+#containerClub img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 70vw;
+  margin: 10px;
+  padding: 15px;
   
 }
 </style>
@@ -242,11 +268,28 @@ section {
   </div>
 </section>
 
+<section id="sectionClub">
+  <div id='containerClub'>
+    <div>
+      <h2 style='font-size:60px;color:orange'>What is Forever Club?</h2>
+    </div>
+    <p>
+      Forever Club 5 membership is a subscription plan that offers a range of exclusive benefits to its
+members. With Club 5, we receive five unique perks each month, including discounts on products,
+storage credits, access to special features, and more. The membership provides an enhanced experience
+for us, giving us additional value and rewards for our loyalty. Whether it's saving on custom products,
+enjoying extra storage space, or unlocking premium features, Club 5 membership enhances the Forever
+experience and provides added value.
+    </p>
+    <img src="bulkpricing.jpg">
+  </div>
+</section>
+
 <section style="background-image: url('cloudservice.jpg'); background-size: 90% 80%; background-repeat:no-repeat; background-position: center;"></section>
 
 <section  id="sectionfour">
   <div class="hidden" id='containerThree'>
-      <div id='title'>
+      <div class='title'>
         <h2 style="font-size:47px;color:orange;background-color:white;">A Memory Coach and the 4 Ps</h2>
       </div>
       <p style="font-size:30px">Protection<br><br><br><br>Perserving<br><br><br><br>Passing Along<br><br><br><br>Product</p>
