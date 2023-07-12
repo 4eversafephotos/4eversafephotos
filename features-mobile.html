@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  <title>CodePen - A Pen by Carson</title>
+    <link rel="canonical" href="https://codepen.io/carsoncode/pen/QWJOYWq" />
+  
+  
+  
+  
+<style>
+:root {
+  --columns: 1fr 1fr 1fr 1fr;
+}
+
+body {
+  font-family: monospace;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+h1 {
+  margin-top: 0px;
+  color: darkblue;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#container div {
+  display: grid;
+  width: 75vw;
+  min-height: 15vh;
+  padding: 30px;
+  border: 1px solid blue;
+  transition: 1.5s;
+  border-radius: 30px;
+  box-shadow: 0 0px 40px rgb(0 0 0 / 0.2);
+  margin: 5px;
+  text-align: center;
+}
+
+#container div h1 {
+  font-size: 2.5vw;
+  color: green;
+}
+
+#container div p {
+  font-size: 15px;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <section>
+  <h1 style="font-size:60px;" class="" id="adsfasdfiu">Forever Features:</h1>
+  <div id='container'>
+    <div id='three'><h1>Storage</h1>
+      <p>Forever offers secure and flexible storage options for our digital assets. We can choose from a range of
+storage plans to accommodate our needs. These plans provide ample space to store photos, videos,
+documents, and other personal content. Forever ensures the safety and longevity of our stored data
+through redundant storage, multiple data centers, and rigorous data integrity checks. With Forever
+storage options, you can have peace of mind knowing that your memories are protected against loss,
+damage, or outdatedness, allowing us to access and enjoy them whenever we want.</p>
+    </div>
+    <div><h1>Customized</h1>
+      <p>
+        Forever provides custom organization features to help us efficiently manage and navigate our digital
+content. We can create personalized albums, collections, and tags to categorize and organize our
+photos, videos, and documents based on themes, events, or any criteria they prefer. The platform also
+supports advanced search functionalities, making it easy to locate specific items within our collection.
+Whether we want to create a chronological timeline, group content by family members or occasions, or
+apply unique labels to differentiate content, Forever custom organization tools empowers us to curate
+and structure our digital memories in a way that is meaningful and intuitive to us.
+      </p>
+    </div>
+    <div id="one"><h1>Digitation</h1>
+      <p>Forever digitization services help us convert our physical media, such as printed photos, negatives,
+slides, and VHS tapes, into digital formats. By sending our items to Forever, we can ensure that our
+precious memories are preserved and accessible in a more modern and convenient way. The digitization
+process is handled with care and expertise, and the resulting digital files are organized and stored
+securely on the platform, allowing us to easily view, share, and cherish our memories for years to come.</p>
+    </div>
+    <div><h1>Club 5</h1>
+      <p>Forever Club 5 membership is a subscription plan that offers a range of exclusive benefits to its
+members. With Club 5, we receive five unique perks each month, including discounts on products,
+storage credits, access to special features, and more. The membership provides an enhanced experience
+for us, giving us additional value and rewards for our loyalty. Whether it&#39;s saving on custom products,
+enjoying extra storage space, or unlocking premium features, Club 5 membership enhances the Forever
+experience and provides added value.</p>
+    </div>
+  </div>
+</section>
+  
+  
+      <script id="rendered-js" >
+var parent = document.querySelector('#container');
+
+var children = parent.children;
+
+var index = 0;
+
+setInterval(function() {
+  for (var i = 0; i < children.length; i++) {
+    children[i].style.boxShadow = '0 0px 40px rgb(255 255 255 / 0.2)';
+  }
+  children[index % children.length].style.boxShadow = "0 0px 40px rgb(0 0 0 / 0.5)";
+  index++;
+}, 2000);
+    </script>
+
+  
+</body>
+
+</html>
