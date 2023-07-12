@@ -117,18 +117,16 @@ experience and provides added value.</p>
   
       <script id="rendered-js" >
 var parent = document.querySelector('#container');
-
 var children = parent.children;
-
-var index = 0;
+var alpha = 0;
 
 setInterval(function() {
   for (var i = 0; i < children.length; i++) {
-    children[i].style.boxShadow = '0 0px 40px rgb(255 255 255 / 0.2)';
+    children[i].style.boxShadow = '0 0px 40px rgb(0 0 0 / ' + alpha + ')';
   }
-  children[index % children.length].style.boxShadow = "0 0px 40px rgb(0 0 0 / 0.5)";
-  index++;
-}, 2000);
+  alpha += 0.1;
+  if (alpha > 1) { alpha = 0; }
+}, 250);
     </script>
 
   
