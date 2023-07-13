@@ -7,10 +7,6 @@
   
   <title>Forever Features...</title>
 <style>
-:root {
-  --columns: 1fr 1fr 1fr 1fr;
-}
-
 body {
   font-family: monospace;
 }
@@ -76,15 +72,15 @@ h1 {
   <section>
   <h1 style="font-size:60px;" class="" id="adsfasdfiu">Forever Features:</h1>
   <div id='container'>
-    <div id='three'><h1>Storage</h1>
+    <div id="one"><h1>Storage</h1>
       <p>Forever offers secure and flexible storage options for our digital assets. We can choose from a range of
 storage plans to accommodate our needs. These plans provide ample space to store photos, videos,
 documents, and other personal content. Forever ensures the safety and longevity of our stored data
 through redundant storage, multiple data centers, and rigorous data integrity checks. With Forever
 storage options, you can have peace of mind knowing that your memories are protected against loss,
-damage, or outdatedness, allowing us to access and enjoy them whenever we want.</p>
+damage, or outdatedness, allowing us to access and enjoy them whenever we want.<br>(Click for pricing)</p>
     </div>
-    <div><h1>Customized</h1>
+    <div id="two"><h1>Customized</h1>
       <p>
         Forever provides custom organization features to help us efficiently manage and navigate our digital
 content. We can create personalized albums, collections, and tags to categorize and organize our
@@ -95,14 +91,14 @@ apply unique labels to differentiate content, Forever custom organization tools 
 and structure our digital memories in a way that is meaningful and intuitive to us.
       </p>
     </div>
-    <div id="one"><h1>Digitation</h1>
+    <div id="three"><h1>Digitation</h1>
       <p>Forever digitization services help us convert our physical media, such as printed photos, negatives,
 slides, and VHS tapes, into digital formats. By sending our items to Forever, we can ensure that our
 precious memories are preserved and accessible in a more modern and convenient way. The digitization
 process is handled with care and expertise, and the resulting digital files are organized and stored
 securely on the platform, allowing us to easily view, share, and cherish our memories for years to come.</p>
     </div>
-    <div><h1>Club 5</h1>
+    <div id="four"><h1>Club 5</h1>
       <p>Forever Club 5 membership is a subscription plan that offers a range of exclusive benefits to its
 members. With Club 5, we receive five unique perks each month, including discounts on products,
 storage credits, access to special features, and more. The membership provides an enhanced experience
@@ -114,7 +110,26 @@ experience and provides added value.</p>
 </section>
   
   
+      <script id="rendered-js" >
+var one = document.getElementById('one');
+one.og = one.innerHTML;
+one.num = 360;
+one.diff = `<h1 style="margin-bottom:-100px">Pricing</h1>
+      <img width="100%" height="100%" src='pricing'.jpg'>`;
+
+one.addEventListener('click', function() {  
+  one.style.transform = "rotateY(" + one.num + "deg)";
+  one.num += 360;  
   
+  if (one.innerHTML === one.og) {
+    one.innerHTML = one.diff;
+  } else if (one.innerHTML === one.diff) {
+    one.innerHTML = one.og;
+  }
+  
+});
+    </script>
+
   
 </body>
 
