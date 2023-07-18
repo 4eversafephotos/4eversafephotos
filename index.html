@@ -15,15 +15,17 @@
 <meta name="language" content="English">
 <meta name="revisit-after" content="7 days">
 <meta name="author" content="Carson Ouckama">
-  
-  
-<style>
+
+  <style>
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   animation-fill-mode: forwards;
 }
 
 body {
-  position: relative;
   background-color: rgb(200, 200, 200);
   color: white;
   font-family: monospace;
@@ -241,6 +243,77 @@ section {
   padding: 15px;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+#navbar {
+  all: revert;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 98%;
+  background-color: grey;
+  height: 20vh;
+  border-radius: 50px;
+  position: fixed;
+  left: 90%;
+  bottom: 5%;
+  transition: 1s;
+  z-index: 10;
+}
+
+#navbar:hover {
+  left: 1%;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  width: 15vw;
+  height: 15vh;
+  align-items:center;
+  justify-content:center;
+  font-size: 3vw;
+  border-radius: 20px;
+  left: -3vw;
+  background-color: rgb(150, 150, 150);
+  color: black;
+  cursor: pointer;
+  top: 0vw;
+  transition: 0.75s;
+}
+
+.nav:hover {
+  top: -1.5vh;
+}
+
+.nav a {
+  color: inherit;
+  
+}
+
+#start {
+  position: relative;
+  display: flex;
+  width: 8vw;
+  height: 10vh;
+  align-items:center;
+  justify-content:center;
+  font-size: 7vw;
+  border-radius: 50px;
+  left: -3vw;
+  font-weight: bold;
+  color: black;
+}
 </style>
 
   
@@ -249,7 +322,19 @@ section {
 </head>
 
 <body>
-  <section>
+  <div id="navbar">
+  <div id="start">&lt;</div>
+  <div class="nav"><a href="#sectionContainerOne">Home</a></div>
+  <div class="nav"><a href="#sectionContainerTwo">Forever</a></div>
+  <div class="nav"><a href="#sectionClub">Club 5</a></div>
+  <div class="nav"><a href="#sectionfour">Coaching</a></div>
+  <div class="nav"><a href="#eventsAndCalendar">Events</a></div>
+</div>
+
+
+
+
+<section id="sectionContainerOne">
   <div class="hidden" id='containerOne'>
     <img src='https://d1vg9wkrun3t3k.cloudfront.net/users/433dff00-ab8a-47d0-95f1-5071e747036d/forever_files/ce338075-b8ab-4f8b-b3ae-faa4deffc52c/w2048.jpg?format=jpg&crop=fit&width=256&height=256&quality=60' width='475px' height='475px'>
     <div>
@@ -259,7 +344,7 @@ section {
   </div>
 </section>
 
-<section>
+<section id="sectionContainerTwo">
   <div class="hidden" id='containerTwo'>
     <div>
       <h2 style='font-size:60px'>What is <a href="https://www.forever.com/ambassador/tonya-ouckama" style="color: inherit;" target="_blank">Forever</a>?</h2>
@@ -318,7 +403,7 @@ experience and provides added value.
   </div>  
 </section>
 
-<section>
+<section id="eventsAndCalendar">
   <h1 style="font-size: 50px;">Events and Calender</h1>
   <div id="grid">
     <div class="boxthing"><p><a href="www.tinyurl.com/4everwherever" target="_blank">FOREVER WHEREVER</a></p>A FREE ZOOM training opportunity: Instruction at the top of each hour, plus time to work on your projects or come and get more help in our breakout rooms.</div>
