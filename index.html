@@ -247,6 +247,46 @@ section {
 
 
 
+#sectionSecurity {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+#sectionSecurity p {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+
+#sectionSecurity::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .5;
+  content: "";
+  z-index: -1;
+  background-image: url('https://www.enisa.europa.eu/media/files/security%20lock.jpg/@@images/image.jpeg');
+  background-size: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,10 +299,10 @@ section {
   display: grid;
   place-items: center;
   text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 98%;
   background-color: teal;
-  height: 20vh;
+  height: 15vh;
   border-radius: 50px;
   position: fixed;
   left: 90%;
@@ -278,11 +318,11 @@ section {
 .nav {
   position: relative;
   display: flex;
-  width: 13vw;
-  height: 15vh;
+  width: 10vw;
+  height: 10vh;
   align-items:center;
   justify-content:center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   border-radius: 20px;
   left: -3vw;
   background-color: lightblue;
@@ -290,10 +330,11 @@ section {
   cursor: pointer;
   top: 0vw;
   transition: 0.75s;
+  padding: 1.5px;
 }
 
 .nav:hover {
-  top: -1.5vh;
+  top: -2.5vh;
 }
 
 .nav a {
@@ -308,7 +349,7 @@ section {
   height: 10vh;
   align-items:center;
   justify-content:center;
-  font-size: 7vw;
+  font-size: 5vw;
   border-radius: 50px;
   left: -3vw;
   font-weight: bold;
@@ -329,6 +370,7 @@ section {
   <div class="nav"><a href="#sectionClub">Club 5</a></div>
   <div class="nav"><a href="#sectionfour">Coaching</a></div>
   <div class="nav"><a href="#eventsAndCalendar">Events</a></div>
+  <div class="nav"><a href="#sectionSecurity">Secure</a></div>
   <div class="nav"><a href="#sectionLinks">More Links</a></div>
 </div>
 
@@ -340,7 +382,7 @@ section {
     <img src='https://d1vg9wkrun3t3k.cloudfront.net/users/433dff00-ab8a-47d0-95f1-5071e747036d/forever_files/ce338075-b8ab-4f8b-b3ae-faa4deffc52c/w2048.jpg?format=jpg&crop=fit&width=256&height=256&quality=60' width='475px' height='475px'>
     <div>
       <h1 style="font-size: 50px;">Tonya Ouckama <br>- FOREVER Ambassador <br>- Memory Coach</h2>
-      <p>Let's start effortlessly making your memmories manageable! Hello, my name is Tonya Ouckama, and I am passionate about helping others perserve your memories for <i>generations</i> to come. Whether you are a beginner or a master I am here to guide you on your memory perserving journey as I help you learn to save organize and share your special moments. Let's walk this exciting adventure together! Sign up <a href="https://www.forever.com/ambassador/tonya-ouckama" target="_blank">here</a>.</p>
+      <p>Let's start effortlessly making your memories manageable! Hello, my name is Tonya Ouckama, and I am passionate about helping others preserve your memories for <i>generations</i> to come. Whether you are a beginner or a master I am here to guide you on your memory preserving journey as I help you learn to save, organize and share your special moments. Let's walk this exciting adventure together! Sign up <a href="https://www.forever.com/ambassador/tonya-ouckama" target="_blank">here</a>.</p>
     </div>
   </div>
 </section>
@@ -400,18 +442,18 @@ experience and provides added value.
         <h2 style="font-size:47px;color:orange;background-color:white;">A Memory Coach and the 4 Ps</h2>
       </div>
       <p style="font-size:30px">Protection<br><br><br><br>Perserving<br><br><br><br>Passing Along<br><br><br><br>Product</p>
-      <p>Many of the photo sharing platforms out there have an interesting condition in their terms of service. At <i>any</i> time, they can delete your photos. Yep, <i>any</i> time. Google Photos, Shutterfly, Facebook, and more. In fact, Google Photos will delete you pictures and memories if it learns you're dead. Not with FOREVER.<br><br>FOREVER can digitize your old photos, your VHS tapes, anything that is going out of date. They return your originals to you, along with a digitized version to help you keep up with the world. Not only that, but you don't have to fear damage from natural disasters ruining your only copy.<br><br>FOREVER makes it easy to pass along your digital copies, in fact, when you create an account, you get the storage for your lifetime, plus 100 years. That way your memories can be safe for generations onward.<br><br>Sometimes we want to display our memories, and that is easy with FOREVER! FOREVER has mugs, books, blankets, jigsaw puzzles, water bottles, and new products come out frequently. These make the perfect birthday or holiday gifts for family and friends.</p>
+      <p>Many of the photo sharing platforms out there have an interesting condition in their terms of service. At <i>any</i> time, they can delete your photos. Yep, <i>any</i> time. Google Photos, Shutterfly, Facebook, and more. In fact, Google Photos will delete your pictures and memories if it learns you're dead. Not with FOREVER.<br><br>FOREVER can digitize your old photos, your VHS tapes, anything that is going out of date. They return your originals to you, along with a digitized version to help you keep up with the world. Not only that, but you don't have to fear damage from natural disasters ruining your only copy.<br><br>FOREVER makes it easy to pass along your digital copies, in fact, when you create an account, you get the storage for your lifetime, plus 100 years. That way your memories can be safe for generations onward.<br><br>Sometimes we want to display our memories, and that is easy with FOREVER! FOREVER has mugs, books, blankets, jigsaw puzzles, water bottles, and new products come out frequently. These make the perfect birthday or holiday gifts for family and friends.</p>
   </div>  
 </section>
 
 <section id="eventsAndCalendar">
-  <h1 style="font-size: 50px;">Events and Calender</h1>
+  <h1 style="font-size: 50px;">Events and Calendar</h1>
   <p style="font-size:25px"><a href='https://tidycal.com/4eversafephotos' target="_blank">Schedule an Appointment!</a></p>
   <div id="grid">
     <div class="boxthing"><p><a href="www.tinyurl.com/4everwherever" target="_blank">FOREVER WHEREVER</a></p>A FREE ZOOM training opportunity: Instruction at the top of each hour, plus time to work on your projects or come and get more help in our breakout rooms.</div>
     <div class="boxthing"><p><a href="https://www.facebook.com/groups/2631501760491630" target="_blank">TUESDAYS ON FACEBOOK</a></p>Tep the App Tuesday reminder and FOREVER MOMENTS VIP CLIENT Group LIVE Training every Tuesday, including a monthly upload/delete challenge.  Prizes each month.</div>
     <div class="boxthing"><p>FOREVER STORAGE 101</p>....is an overview of your FOREVER account.  Invite others to join you! </div>
-    <div class="boxthing"><p>SOS - SAVE, ORGANIZE, SHARE</p>....is offered to help you iontroduce your friends & family to the four P's - Protection, Preserving, Passing Along, & Product.</div>
+    <div class="boxthing"><p>SOS - SAVE, ORGANIZE, SHARE</p>....is offered to help you introduce your friends & family to the four P's - Protection, Preserving, Passing Along, & Product.</div>
   </div>
   <img src="calendar.jpg" id="happyCow">
 </section>
@@ -429,6 +471,60 @@ experience and provides added value.
   </div>
 </section>
 
+
+
+<section id="sectionSecurity">
+  <div class="hidden">
+      <div class='title'>
+        <h2 style="font-size:47px;color:black;">Security</h2>
+      </div>
+      <p style="color:black;background-color:rgba(255, 255, 255, 0.7)">At FOREVER.com, the security and privacy of our customers; memories and personal data are
+of utmost importance to us. We understand the sentimental value and irreplaceable nature of the
+memories entrusted to us, and we are committed to ensuring their protection through robust security
+        measures.</p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Data Encryption: We employ state-of-the-art encryption technologies to safeguard your memoirs and
+personal information. All data stored on our servers is encrypted using industry-standard algorithms,
+ensuring that only authorized individuals can access it.
+Secure Infrastructure: Our infrastructure is designed with security in mind, utilizing modern security
+protocols and best practices. We regularly update and maintain our systems to address any
+vulnerabilities and stay ahead of emerging threats.
+</p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Access Controls: We have implemented strict access controls to ensure that only authorized personnel
+can access your data. Our employees undergo comprehensive background checks and receive security
+training to maintain the confidentiality and integrity of your memoirs.
+    </p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Backup and Redundancy: To protect against data loss, we maintain multiple backups of your memories
+in geographically diverse locations. This redundancy ensures that your memoirs are preserved even in
+the unlikely event of a system failure or natural disaster.
+    </p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Continuous Monitoring: We employ a dedicated team of security professionals who actively monitor our
+systems for any suspicious activity or potential breaches. In the event of any security incidents, we have
+response plans in place to mitigate and address them promptly.
+    </p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Third-Party Audits: We regularly engage independent third-party auditors to assess the security of our
+systems and validate our practices. These audits help us identify any areas for improvement and ensure
+that we meet or exceed industry standards.
+    </p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+Transparent Privacy Policy: Our privacy policy outlines how we collect, use, and protect your personal
+information. We are committed to transparency and will never share your data with third parties
+without your explicit consent, except as required by law.
+    </p><p style="color:black;background-color:rgba(255, 255, 255, 0.7)">
+User Control: We provide you with granular control over your memoirs, allowing you to choose the
+privacy settings and sharing options that best suit your preferences. You have the freedom to determine
+who can access and view your memories.
+While we strive to maintain the highest level of security, it&#39;s important to note that no system is
+completely immune to all risks. We encourage our users to follow good security practices, such as using
+strong and unique passwords and enabling two-factor authentication.
+At FOREVER.com, we are dedicated to safeguarding your cherished memories and ensuring that they
+remain secure for generations to come.</p>
+  </div>  
+</section>
+
+
+
+
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSTSY5HYTK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -437,7 +533,6 @@ experience and provides added value.
 
   gtag('config', 'G-RSTSY5HYTK');
 </script>
-  
   
       <script id="rendered-js" >
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
