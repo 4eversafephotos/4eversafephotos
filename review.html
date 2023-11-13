@@ -132,11 +132,11 @@ input, textarea {
 >
   <label>
     <h1>Your email:</h1>
-    <input type="email" id="email" name="email">
+    <input type="email" name="email">
   </label>
   <label>
     <h1>Your message:</h1>
-    <textarea name="message" id="text"></textarea>
+    <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
   <button id="submit">Send</button>
@@ -158,7 +158,6 @@ document.body.addEventListener("click", function() {
 });
 
         async function login() {
-          var t = document.getElementById("email").value + "\n" + document.getElementById("text").value;
 				var options = {
 					method: 'POST',
 					headers: {
@@ -171,7 +170,7 @@ document.body.addEventListener("click", function() {
 				var response = await fetch('https://red-kind-bat.cyclic.app/email', options);
 				var data = await response.json();
 				if (data.success === true) {
-					//alert("yay!!")
+					alert("yay!!")
 				}
 			}
 
