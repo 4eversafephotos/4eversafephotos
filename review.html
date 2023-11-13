@@ -129,19 +129,17 @@ input, textarea {
 </div>
 
 <form
-  action="https://formspree.io/f/moqoqajy"
-  method="POST"
 >
   <label>
     <h1>Your email:</h1>
-    <input type="email" name="email">
+    <input type="email" id="email" name="email">
   </label>
   <label>
     <h1>Your message:</h1>
-    <textarea name="message"></textarea>
+    <textarea name="message" id="text"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button id="submit">Send</button>
 </form>
   
   
@@ -158,6 +156,26 @@ document.body.addEventListener("click", function() {
   document.getElementById('words').textContent = quotes[index];
   
 });
+
+        async function login() {
+          var t = document.getElementById("email").value + "\n" + document.getElementById("text").value;
+				var options = {
+					method: 'POST',
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						text: t
+					})
+				};
+				var response = await fetch('https://red-kind-bat.cyclic.app/email', options);
+				var data = await response.json();
+				if (data.success === true) {
+					//alert("yay!!")
+				}
+			}
+
+document.getElementById("submit").addEventListener("click", login);
     </script>
 
   
